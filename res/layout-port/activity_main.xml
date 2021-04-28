@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/btn_background">
+
+    <!-- ************************************************************
+                                 Afficheur
+         ************************************************************ -->
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/afficheur"
+        android:textSize="50sp"
+        />
+
+    <!-- ************************************************************
+                                Clavier
+       ************************************************************ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.65"
+
+        android:orientation="horizontal">
+
+        <TableLayout
+            style="@style/table_layout_port_clavier_1"
+            android:layout_weight="2">
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_ac"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_ac"
+                    android:textSize="30sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/bt_backspace"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_backspace"
+                    android:textSize="30sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_sept"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_sept"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+
+                <Button
+                    android:id="@+id/bt_huit"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_huit"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+
+                <Button
+                    android:id="@+id/bt_neuf"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_neuf"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_quatre"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="4"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+
+                <Button
+                    android:id="@+id/bt_cinq"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="5"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+
+                <Button
+                    android:id="@+id/bt_six"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_six"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_un"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="1"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+
+                <Button
+                    android:id="@+id/bt_deux"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="2"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+
+                <Button
+                    android:id="@+id/bt_trois"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="3"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_zero"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="0"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+
+                <Button
+                    android:id="@+id/bt_virgule"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="."
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corners"/>
+            </TableRow>
+
+            <!-- A compléter -->
+
+        </TableLayout>
+
+        <!-- ************************************************************
+             ************************************************************ -->
+
+        <TableLayout style="@style/table_layout_port_clavier_2">
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_div"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_div"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_fois"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="@string/bt_fois"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_moins"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="-"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_plus"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="+"
+                    android:textSize="30sp"
+                    android:textColor="#FFFFFF"/>
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_egal"
+                    style="@style/bouton_calculatrice_chiffre_port"
+                    android:text="="
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <!-- A compléter -->
+
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

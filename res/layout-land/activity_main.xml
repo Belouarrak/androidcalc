@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/btn_background">
+
+    <!-- ************************************************************
+                             Afficheur
+     ************************************************************ -->
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/afficheur"
+        android:textSize="50sp"
+        android:maxLines="2" />
+
+    <!-- ************************************************************
+                            Clavier
+         ************************************************************ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:orientation="horizontal"
+
+        >
+
+        <TableLayout style="@style/table_layout"
+            android:layout_weight="0.3"
+            >
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_option"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:clickable="false"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_option" />
+
+                <Button
+                    android:id="@+id/bt_parentOuv"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_parentOuv" />
+
+                <Button
+                    android:id="@+id/bt_parentFerm"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_parentFerm" />
+            </TableRow>
+
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_abs"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_abs" />
+
+                <Button
+                    android:id="@+id/bt_sqrt"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_sqrt" />
+
+                <Button
+                    android:id="@+id/bt_puiss"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_puiss" />
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_sin"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="SIN" />
+
+                <Button
+                    android:id="@+id/bt_cos"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="COS" />
+
+                <Button
+                    android:id="@+id/bt_tan"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="TAN" />
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_asin"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="ASIN" />
+
+                <Button
+                    android:id="@+id/bt_acos"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="ACOS" />
+
+                <Button
+                    android:id="@+id/bt_atan"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="ATAN" />
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_ln"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="LN" />
+
+                <Button
+                    android:id="@+id/bt_log"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="LOG" />
+
+                <Button
+                    android:id="@+id/bt_exp"
+                    style="@style/bouton_calculatrice_fonction_scientifique"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:text="EXP" />
+            </TableRow>
+
+
+            <!-- A compléter -->
+
+
+        </TableLayout>
+
+        <TableLayout
+            style="@style/table_layout"
+            android:layout_weight="0.35">
+
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_backspace"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_backspace" />
+
+                <Button
+                    android:id="@+id/bt_ac"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_ac" />
+            </TableRow>
+
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_sept"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_sept" />
+
+                <Button
+                    android:id="@+id/bt_huit"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_huit" />
+
+                <Button
+                    android:id="@+id/bt_neuf"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_neuf" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_quatre"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/bt_cinq"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/bt_six"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="6" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_un"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/bt_deux"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/bt_trois"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="3" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_zero"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/bt_virgule"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="#FFFFFF"
+                    android:text="." />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            style="@style/table_layout"
+            android:layout_weight="0.15">
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_div"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_div" />
+            </TableRow>
+
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_fois"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/bt_fois" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_plus"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:text="+" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_moins"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:text="-" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/bt_egal"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    style="@style/bouton_calculatrice_chiffre_land"
+                    android:text="=" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
